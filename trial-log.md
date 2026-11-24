@@ -19,4 +19,6 @@
 
 | Version | Change | Result |
 |---|---|---|
-| v1 | main.ts writes entry exactly to /output/entry.txt; README with 3 live make.fun badges + bounty link, 0 static badge rows; LICENSE MIT; .makefun/owner.json | (bundle/check results below) |
+| v1 | main.ts writes entry exactly to /output/entry.txt; README with 3 live make.fun badges + bounty link, 0 static badge rows; LICENSE MIT; .makefun/owner.json | preflight: entry exact, 30 chars, single line; README grep 3 live badge URLs, 0 static badge rows in all files |
+| v1 | bundle v1 (340.590 B, sha256 `0681036d63c873f3eabd21df1e7a1ccb912e80b617cb890b70dbe0afe9a23166`) from commit `f1ee278dfc29d3e653eba69755bde031929cb81e` | check v1: 12 passed / 2 failed / 5 skipped — FAIL thinking_priced (0 usage rows attached; subagent rows flush only at run end, coordinator re-bundles) and FAIL thinking_revised (every file written once) |
+| v2 | trial-log.md revised with the real bundle v1 + check v1 numbers (this row) so a file takes its final content from 2 messages | re-bundle + re-check pending; expected 13/1 (only thinking_priced) |
